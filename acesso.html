@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title> LOGIN | PLENA CONTABILIDADE PUBLICA &copy; USUARIOS - Sistemas de Gestão </title>
+    <meta name="description" content="LOGIN | Plena Contabilidade Publica &copy; Usuarios - Sistemas de Gestão">
+	<meta name="author" content="&copy; Grupo Medis">     
+	<meta name="keywords" content="sistemas, softwares">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link rel="shortcut icon" href="img/pcp.jpg" />
+	<!-- style end -->
+</head>
+<body>
+	<!-- Container Principal -->
+	<div id="container">
+		<div class="slogan">
+			
+		</div>
+		<div class="Logo">
+            <ul>
+                <a href="index.html" target="blank" alt="Plena Contabilidade Publica &copy; Usuarios - Sistemas de Gestão" title="Plena Contabilidade Publica &copy; Usuarios - Sistemas de Gestão">
+				<img src="img/pcp.jpg" alt="LOGIN | Plena Contabilidade Publica &copy; Usuarios Sistemas de Gestão" title="LOGIN | Plena Contabilidade Publica &copy; Usuarios - Sistemas de Gestão" /></a>
+            </ul>
+		</div>
+		
+		<div class="blkDireito">
+			<div class="blkLogin">
+				<div class="blkHead">
+					<div class="blkTextos">
+						<h1> Restrito </h1>
+                    </div>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="blkForm">
+                    <form method="post" action="restricted.html" id="blkLogin" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="kwwE1RA1Q/rKfrArafM7ESoWA0eAUQIJj5W5NK1+Mr8BxdggMthaNtGd5HZyWGX2oYqvyD+Bb7t6znNFtEbiHD9o1ISUEQkBUYP+D4ut8a8urgl0vxLD0TCxBSfuv7Ut" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="980642AA" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="zCHMolIIzTtnzAPbELUtdXpuDuvV9WrHBeM0HOhQfM5/1UwFg2bub9CH0/J1Lw+tqP3pXCen6Wcw+NZ6PiYh7bhTFySajmsTsUiHGA8EkCFyUnUVl8R44x15Yufk4xdw4CG0a2zHkW5XuWLf2d91T+xF89vE+0JpMsGdmQzj4JM=" />
+</div>
+                        
+                        <input name="ttLogin" type="text" id="ttLogin" title="Usuario" class="nmUsuario" />
+                        <input name="ttSenha" type="password" maxlength="250" id="ttSenha" title="Insira sua senha." class="dsSenha" />
+                        
+                        <div class="legenda" id="blkFalhaEmail">
+                            <b></b>
+                        </div>
+
+                        <input type="submit" name="Button1" value="" id="Button1" title="Clique aqui para entrar!"  />
+                        
+                        <a href="javascript:void();" id="btEsqueceuSenha" alt="Esqueceu sua senha? Clique aqui!" title="Esqueceu sua senha? Clique aqui!">Esqueceu sua senha? 		</a>
+                        <div style="clear: both;"></div>
+                    </form>
+                    <form enctype="multipart/form-data" onsubmit="return false" id="blkAlterarSenha" style="display:none">
+                        <input type="hidden" name="fn" value="LOGIN_RecuperarSenha">
+                        <div class="legenda">
+                            <b>Esqueceu sua senha? Insira seu email abaixo e clique em ENVIAR.</b>
+                            <br />
+                            Você receberá em seu email, um link para cadastrar uma nova senha.
+                        </div>
+                        <input type="email" id="nmEmail" class="nmEmail" name="dsEmail" placeholder="Insira seu e-mail" alt="Insira seu e-mail." title="Insira seu e-mail." required />
+
+                        <div class="legenda" id="blkSucessoEmail">
+                            <b>E-Mail enviado com sucesso!</b>
+                            <br />
+                            <span>Siga as instruções do e-mail para cadastrar uma nova senha.</span>
+                        </div>
+
+                        <div class="legenda" id="blkFalhaEmail">
+                            <b></b>
+                         </div>
+
+                        <input type="button" id="btVoltar" value="◄" alt="Voltar" title="Voltar" />
+                        <input type="submit" id="btEnviar" value="" alt="Clique aqui para enviar e-mail para recuperar senha." title="Clique aqui para enviar e-mail para recuperar senha." />
+
+                        <div style="clear: both;"></div>
+                    </form>
+				</div>				
+			</div>
+        </div>
+    </div>
+</body>
+    </div>
+	<!-- Container Principal / END -->
+	
+	<!-- Faixas coloridas -->
+	<div id="blkFaixasColoridas">
+		<div class="a"></div>
+		<div class="b"></div>
+		<div class="c"></div>
+		<div class="d"></div>
+	</div>
+	<!-- Faixas coloridas / END -->
+
+    
+    <script type="text/javascript" src="layout/js/scripts.js"></script>
+    <script type="text/javascript">
+        $(".nmUsuario").attr("placeholder", "Usuário");
+        $(".nmUsuario").attr("alt", "Insira seu usuário");
+        $(".nmUsuario").attr("required", "required");
+
+        $(".dsSenha").attr("placeholder", "Senha");
+        $(".dsSenha").attr("alt", "Insira sua senha.");
+        $(".dsSenha").attr("required", "required");
+    </script>
+</body>
+</html>
+

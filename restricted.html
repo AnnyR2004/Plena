@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="pt"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>LOGIN| GESTÃO DE ARQUIVOS E CONTRATOS</title> 
+    <meta name="viewport" content="width=device-width, escala inicial=1, escala máxima=1">
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body> 
+    <!-- Container Principal --> 
+    <div id="container"> 
+         <h1>Incluir Arquivos na Página Inicial e Armazenar Contratos</h1> 
+    <!-- Seção de Upload de Arquivo --> 
+        <div class="file-upload-section"> 
+             <h2>Incluir Arquivo na Página Inicial</h2> 
+             <form id="uploadForm" method="post" action="http://localhost:3000/upload" enctype="multipart/form-data">
+                 <input type="file" id="fileInput" name="file" obrigatório>
+                 <button type="submit">Incluir arquivo</button> 
+             </form> 
+            <div id="uploadedFiles"> 
+                <h3>Arquivos Incluídos:</h3> 
+                <ul id="fileList"></ul>
+            </div> 
+        </div> 
+    <!-- Seção de Upload de Contrato --> 
+      <hr> <div class="contract-upload-section">
+          <h2>Armazenar Contrato</h2> 
+          <form id="contractForm" method="post" action="http://localhost:3000/upload/contrato" enctype="multipart/form-data"> 
+              <input type="file" id="contractInput" name="contract" required>
+              <button type="submit">Salvar Contrato</button> 
+      </form> 
+         <div id="storedContracts">
+             <h3>Contratos Armazenados:</h3> 
+             <ul id="contractList"></ul> 
+         </div> 
+       </div>
+    </div>
+    <script src="scripts.js"></script> 
+</body>
+</html>
